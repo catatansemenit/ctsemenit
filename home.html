@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Catatan Semenit - Home
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dropdown-enter {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        .dropdown-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 300ms, transform 300ms;
+        }
+
+        .dropdown-leave {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .dropdown-leave-active {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 300ms, transform 300ms;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-4">
+                <a href="index.html">
+                    <img alt="Ape Shop Logo" class="h-100" height="10" src="logo.png" width="80" />
+                </a>
+                <a href="https://www.instagram.com/catatansemenit/profilecard/?igsh=aGh6MTRlNzV2aXdh">
+                    <i class="fab fa-instagram text-black text-xl">
+                    </i>
+                </a>
+                <a href="https://www.tiktok.com/@catatan.semenit?_t=8rR3iZytGRU&_r=1">
+                    <i class="fab fa-tiktok text-black text-xl">
+                    </i>
+                </a>
+                <a href="x.html">
+                    <i class="fab fa-twitter text-black text-xl">
+                    </i>
+                </a>
+            </div>
+            <div class="relative">
+                <button class="text-black text-xl focus:outline-none" id="dropdownButton">
+                    <i class="fas fa-bars">
+                    </i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden"
+                    id="dropdown">
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="home.html">
+                        Home
+                    </a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="about.html">
+                        About
+                    </a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="cervices.html">
+                        Services
+                    </a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="contact.html">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto py-8 px-4">
+        <div class="text-center md:text-left">
+            <h1 class="text-4xl font-bold title mt-2">
+                Owner Catatan Semenit
+            </h1>
+            <p class="text-lg text-gray-700 mt-4">
+                Gak perlu waktu lama, hanya dalam semenit, lo bisa dapetin insight berharga tentang dunia bisnis dan
+                kehidupan seorang owner. Setiap catatan yang dibagikan di sini penuh dengan tips, trik, dan pengalaman
+                yang bisa langsung lo aplikasikan buat ngembangin usaha lo. Semenit aja, tapi ilmu yang lo dapet bisa
+                ngefek besar buat bisnis lo!
+            </p>
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold title">
+                    Owner
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <img alt="A man wearing a white shirt standing in front of a building" class="w-full h-auto"
+                            height="200" src="5.jpeg" width="300" />
+                        <h3 class="text-xl font-bold title mt-2">
+                            M Syifa'ul Anam
+                        </h3>
+                        <p class="text-gray-700 mt-2">
+                            Basic ketenangan itu cuma sholat. Hidup bisa berat, tapi ketenangan sejati ada dalam sholat.
+                            Setiap gerakan dan doa membawa kedamaian, bikin hati dan pikiran lebih tenang. Gak perlu
+                            cari kemana-mana, ketenangan udah ada di tiap sholat kita.
+                        </p>
+                        <a class="text-blue-500 mt-2 inline-block"
+                            href="https://www.instagram.com/faulnam_/profilecard/?igsh=Zzc1NjZyNmI0NzFt  ">
+                            selengkapnya
+                        </a>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <img alt="A man wearing a stylish outfit" class="w-full h-auto" height="200"
+                            src="2.jpeg"
+                            width="300" />
+                        <h3 class="text-xl font-bold title mt-2">
+                            Eryc Praditya Agung Prasetyo
+                        </h3>
+                        <p class="text-gray-700 mt-2">
+                            Kamu tidak berhak mengeluarkan air mata untuk seseorang yang belum halal bagimu.
+                        </p>
+                        <a class="text-blue-500 mt-2 inline-block" href="https://www.instagram.com/epap_77/profilecard/?igsh=MTlqd2V0bjloOGp1cg==">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/catatansemenit/profilecard/?igsh=aGh6MTRlNzV2aXdh">
+                    <i class="fab fa-instagram text-black text-xl">
+                    </i>
+                </a>
+                <a href="https://www.tiktok.com/@catatan.semenit?_t=8rR3iZytGRU&_r=1">
+                    <i class="fab fa-tiktok text-black text-xl">
+                    </i>
+                </a>
+                <a href="x.html">
+                    <i class="fab fa-twitter text-black text-xl">
+                    </i>
+                </a>
+            </div>
+            <p class="text-gray-700">
+                &copy; 2024 Catatan Semenit.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dropdownButton').addEventListener('click', function () {
+            var dropdown = document.getElementById('dropdown');
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                dropdown.classList.add('dropdown-enter');
+                setTimeout(function () {
+                    dropdown.classList.remove('dropdown-enter');
+                    dropdown.classList.add('dropdown-enter-active');
+                }, 10);
+            } else {
+                dropdown.classList.add('dropdown-leave');
+                setTimeout(function () {
+                    dropdown.classList.remove('dropdown-leave');
+                    dropdown.classList.add('dropdown-leave-active');
+                    setTimeout(function () {
+                        dropdown.classList.remove('dropdown-leave-active');
+                        dropdown.classList.add('hidden');
+                    }, 300);
+                }, 10);
+            }
+        });
+    </script>
+</body>
+
+</html>
